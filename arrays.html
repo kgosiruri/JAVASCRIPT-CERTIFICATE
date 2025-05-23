@@ -1,0 +1,73 @@
+<html>
+<head>
+    Javascript Tutorial
+</head>    
+
+<body><p>
+    Arrays stores data 
+</p>
+<script>
+    let cars = ["bmw", "volvo", "honda"];
+    document.getElementById("arrays").innerHTML = cars;
+
+    let bw =cars[0];
+    document.getElementById("arrays").innerHTML = bmw;
+
+    let len =cars.length;
+    document.getElementById("arrays").innerHTML = len;
+
+    let last =cars[cars.length -1];
+    document.getElementById("arrays").innerHTML = last;
+
+    cars.forEach((item,index,array) => {console.log(item, index);});
+
+    document.getElementById("arrays").innerHTML = cars.toString;
+
+    document.getElementById("arrays").innerHTML = cars.toString;
+ let last1 =cars.pop();
+    document.getElementById("arrays").innerHTML = last1;
+    
+    let last2 = cars[cars.length -1]
+    console.log(last2);
+    
+    cars.push(Audi);
+    document.getElementById("arrays").innerHTML = cars;
+
+    cars.shift();
+    document.getElementById("arrays").innerHTML = cars;
+
+    cars.unshift("Lambo");
+    document.getElementById("arrays").innerHTML = cars;
+
+    let bikes = ["yamaha", "Suzuki", "royal enfield"];
+    let vehicles =cars.concat(bikes);
+    document.getElementById("arrays").innerHTML = vehicles;
+
+    vehicles.sort();
+    document.getElementById("arrays").innerHTML = vehicles;
+
+    vehicles.reverse();
+    document.getElementById("arrays").innerHTML = vehicles;
+
+    let num1 = [2,3,4,5,6,7];
+    let num2 =num1.map(multiply);
+    function multiply(value){
+    return values *2;
+    }
+    document.getElementById("arrays").innerHTML = num2;
+    
+    let num3 = num1.filter(comp);
+    function comp(value){
+        return value >4;
+    }
+    document.getElementById("arrays").innerHTML = num3;
+let num4 = num1.reduce(sum)
+function sum(total,value){
+    return total+value;
+}
+document.getElementById("arrays").innerHTML = num4;
+
+</script>
+</body>
+
+</html>
