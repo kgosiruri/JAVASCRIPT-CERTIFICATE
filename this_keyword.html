@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Javascript Async/Await
+        </title>
+    </head>
+    <body>
+        <script>
+            var value = 50
+
+            function My_function(){
+                value = 100
+                alert("Value: "+ value)
+                alert("This value: "+ this.value)
+            }
+            My_function()
+        </script>
+        <script>
+            const random = {
+                name: "John",
+                info(){
+                    console.log("Hi My name is " + this.name)
+                }
+            }
+            random.info()
+        </script>
+    </body>
+</html>
