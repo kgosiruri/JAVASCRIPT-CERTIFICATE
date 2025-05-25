@@ -1,0 +1,28 @@
+<html>
+    <head><title>
+        Javascript Closure
+    </title></head>
+    <body>
+        <script>
+            let a = 10;
+            function My_function(){
+                let b =20
+                document.write(a+b)
+            }
+            My_function
+        </script>
+        <script>
+            var a = 10 
+            function First_func(){
+                var b =20;
+                function Second_func(){
+                    var c = a+b 
+                    return c
+                }
+                return Second_func();
+            }
+            var sum =First_func()
+            document.write("The sums is "+ sum +"<br>")
+        </script>
+    </body>
+</html>
